@@ -1,0 +1,111 @@
+<nav class="sticky-menu d-flex align-items-center justify-content-between px-4">
+    <div class="logo">
+        <a class="navbar-brand" href="{{ 'index'|page }}">
+            <img class="logo" src="{{ 'assets/img/logo-twiggy.svg'|theme }}" alt="twiggy logo" width="180">
+        </a>
+    </div>
+
+    <div class="d-flex gap-4">
+
+        <div class="d-none d-sm-flex align-items-center">
+            {% partial 'components/sitepicker' %}
+        </div>
+
+        <a class="btn-menu" href="">
+            <span>Menu</span>
+            <svg id="Layer_1" height="24" viewBox="0 0 512 512" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m16.197 118.877c-9.994-9.993-16.197-23.787-16.197-38.967s6.203-28.974 16.197-38.967 23.787-16.197 38.967-16.197h401.672c15.18 0 28.974 6.203 38.967 16.197s16.197 23.787 16.197 38.967-6.203 28.974-16.197 38.967c-9.993 9.994-23.787 16.197-38.967 16.197h-401.672c-15.18 0-28.974-6.203-38.967-16.197zm440.639 258.049h-401.672c-15.18 0-28.974 6.203-38.967 16.197-9.994 9.992-16.197 23.786-16.197 38.966s6.203 28.974 16.197 38.967c9.993 9.994 23.787 16.197 38.967 16.197h401.672c15.18 0 28.974-6.203 38.967-16.197 9.994-9.993 16.197-23.786 16.197-38.967 0-15.18-6.203-28.974-16.197-38.967-9.993-9.993-23.787-16.196-38.967-16.196zm0-176.09h-401.672c-15.18 0-28.974 6.203-38.967 16.197-9.994 9.993-16.197 23.786-16.197 38.967 0 15.18 6.203 28.974 16.197 38.968 9.994 9.993 23.787 16.197 38.967 16.197h401.672c15.18 0 28.974-6.203 38.967-16.197 9.994-9.995 16.197-23.788 16.197-38.968s-6.203-28.974-16.197-38.967c-9.993-9.994-23.787-16.197-38.967-16.197z" />
+            </svg>
+        </a>
+
+    </div>
+
+</nav>
+
+<div class="overlay d-flex">
+
+    <div class="close position-absolute top-0 end-0 m-4">
+        <svg id="close_icon" enable-background="new 0 0 24 24" height="32" viewBox="0 0 24 24" width="32"
+            xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:svgjs="http://svgjs.dev/svgjs">
+            <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                <path d="m18 24h-12c-3.3 0-6-2.7-6-6v-12c0-3.3 2.7-6 6-6h12c3.3 0 6 2.7 6 6v12c0 3.3-2.7 6-6 6z"
+                    fill="#ffce44" fill-opacity="1" data-original-color="#00adffff" stroke="none" stroke-opacity="1" />
+                <path d="m12.1 10.6 5-4.9 1.4 1.4-5 4.9 5 5-1.5 1.4-5-4.9-4.9 4.9-1.4-1.4 4.9-4.9-5-4.9 1.5-1.6z"
+                    fill="#1d3d91" fill-opacity="1" data-original-color="#ffffffff" stroke="none" stroke-opacity="1" />
+            </g>
+        </svg>
+    </div>
+
+    <div class="wrap">
+
+        <div class="mb-4 d-sm-none">
+            {% partial 'components/sitepicker' %}
+        </div>
+
+        <ul class="navbar-nav my-2 my-lg-0">
+
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{{ 'index'|page }}">{{ 'Domů'|_ }}
+                    <hr>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-bs-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    {{ 'Produkty'|_ }}
+                    <hr>
+                </a>
+                <ul class="collapse p-0" id="collapseMenu">
+                    <li><a class="dropdown-item" href="{{ 'bars/protein'|page }}">Twiggy Ovoce s proteinem
+                            <hr>
+                        </a></li>
+                    <li><a class="dropdown-item" href="{{ 'bars/max'|page }}">Twiggy MAX
+                            <hr>
+                        </a></li>
+                    <li><a class="dropdown-item" href="{{ 'bars/musli'|page }}">Twiggy Müsli
+                            <hr>
+                        </a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{{ 'o-znacce'|page }}">{{ 'O značce'|_ }}
+                    <hr>
+                </a>
+            </li>
+            {% if this.site.locale == 'cs' %}
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{{ 'blog'|page }}">{{ 'Blog'|_ }}
+                    <hr>
+                </a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{{ 'kontakty'|page }}">{{ 'Kontakty'|_ }}
+                    <hr>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="social">
+            <div class="d-flex justify-content-center gap-4">
+        
+                <a class="social-icon" href="{{ global.fb }}" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+        
+                <a class="social-icon" href="{{ global.ig }}" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+        
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

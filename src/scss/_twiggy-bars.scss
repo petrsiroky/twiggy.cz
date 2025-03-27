@@ -1,0 +1,93 @@
+.musli-hero {
+    background: url("../../assets/img/twiggy-musli/page-musli-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .image-stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+
+   
+}
+
+.image-stack__item {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#why {
+  background: url("../../assets/img/twiggy-musli/page-musli-bg1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .why-list {
+    list-style: none;
+
+    li {
+      padding-bottom: 1rem;
+
+      img {
+        min-width: 40px;
+      }
+    }
+  }
+}
+
+.bar-wrapper {
+  background: url("../../assets/img/twiggy-musli/bar-bg.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  img {
+    width: 100px;
+
+    @include media-breakpoint-up(sm) {
+      width: 200px;
+    }
+  }
+}
+
+.bar-list {
+  list-style: none;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  color: $green;
+  margin: 0;
+  padding: 0;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.2rem;
+  }
+ 
+    & li {
+      padding: 10px 0 10px 16px;
+      text-align: left;
+      background-image: url('../../assets/img/icons/leaf.svg');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 14px;
+
+      @include media-breakpoint-up(sm) {
+        padding: 24px 0 24px 24px;
+        background-size: 20px;
+    }
+  }
+}
+
+
+.max-hero {
+  background: url("../../assets/img/twiggy-max/page-max-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+

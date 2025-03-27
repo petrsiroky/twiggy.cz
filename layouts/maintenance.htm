@@ -1,0 +1,26 @@
+[sitePicker]
+==
+{% set availableSites = sitePicker.sites %}
+
+<!doctype html>
+<html lang="{{ this.site.locale }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {% partial 'site/head-links' %}   
+    {% partial 'site/analytics-code' %}
+    
+
+</head>
+    <body class="{{ 'page-'~this.page.id }}">
+
+        <!-- Content -->
+        
+            {% page %}
+        
+        <!-- Scripts -->
+        {% partial 'site/scripts' %}
+    </body>
+</html>

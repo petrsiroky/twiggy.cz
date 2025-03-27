@@ -1,0 +1,48 @@
+[global]
+handle = "MyGlobal"
+
+[sitePicker]
+==
+{% set availableSites = sitePicker.sites %}
+
+<!doctype html>
+<html lang="{{ this.site.locale }}">
+
+<head>
+    {% partial 'site/analytics-code' %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {% partial 'site/head-links' %}   
+    
+
+</head>
+    <body>
+        <div class="page">
+           
+            <!-- Header -->
+            
+            {% partial 'header' %}
+            
+    
+            <!-- Content -->
+            <section class="subhero">
+            <div class="container d-flex align-items-end align-items-md-center justify-content-center h-100">
+                <h1 class="text-blue text-center">{{ this.page.title }}</h1>
+            </div>
+        </section>
+    
+            {% page %}
+    
+    
+            <!-- Footer -->
+            
+            {% partial 'footer' %}
+            
+
+        </div>
+            <!-- Scripts -->
+            {% partial 'site/scripts' %}
+    </body>
+</html>

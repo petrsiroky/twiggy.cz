@@ -1,0 +1,149 @@
+url = "/"
+layout = "default"
+title = "Homepage"
+
+[viewBag]
+seo_title = "... když chceš víc"
+seo_description = "Značka Twiggy je legendou na domácím trhu, kde se již v 90. letech proslavila jako průkopník müsli tyčinek. Jako první v zemi jsme přinesli tento oblíbený snack a od té doby si Twiggy udržela své místo v srdcích zákazníků."
+robot_index = "index"
+robot_follow = "follow"
+meta_keywords = "Twiggy, müsli tyčinky, Twiggy Max, Twiggy Müsli, Twiggy ovocná s proteinem"
+localeSeo_title[en-gb] = "...when you want more!"
+localeSeo_title[pl] = "...jeśli chcesz więcej!"
+localeSeo_description[en-gb] = "The Twiggy brand is a legend on the domestic market, earning fame as a pioneer of muesli bars
+in the 1990s. We were the first in the country to produce this popular snack and Twiggy has been
+a favourite among customers ever since."
+localeSeo_description[pl] = "Marka Twiggy jest legendą na rynku krajowym, gdzie już w latach 90-tych zasłynęła jako pionier
+batoników musli. Jako pierwsi w kraju wprowadziliśmy tę popularną przekąskę i od tego czasu Twiggy zajmuje miejsce w sercach klientów."
+localeMeta_keywords[en-gb] = "Twiggy, muesli bars, Twiggy Max, Twiggy Muesli, Twiggy fruit with protein"
+localeMeta_keywords[pl] = "Twiggy, batoniki musli, Twiggy Max, Twiggy Musli, Twiggy owocowy z białkiem"
+localeRobot_index[en-gb] = "index"
+localeRobot_index[pl] = "index"
+localeRobot_follow[en-gb] = "follow"
+localeRobot_follow[pl] = "follow"
+==
+<!-- HERO Section -->
+<section class="hero bg-crema">
+
+    <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+        <img src="{{ 'assets/img/twiggy-ovoce.png'|theme }}" alt="Twiggy Ovoce" class="position-absolute bar bar-ovoce">
+        <img src="{{ 'assets/img/twiggy-musli.png'|theme }}" alt="Twiggy Musli" class="position-absolute bar bar-musli">
+        <img src="{{ 'assets/img/twiggy-max.png'|theme }}" alt="Twiggy MAX" class="position-absolute bar bar-max">
+        <img src="{{ 'assets/img/twiggy-malina.png'|theme }}" alt="Twiggy malina" class="position-absolute bar bar-malina">
+
+        <img src="{{ global.img|media }}" alt="Twiggy - Když chceš víc" class="img-title">
+    </div>
+    <img src="{{ 'assets/img/stickers/maxx-taste.svg'|theme }}" alt="Twiggy" class="maxx-taste position-absolute">
+</section>
+<!--HERO Section END -->
+
+
+<!-- PROTEIN section -->
+<section class="protein">
+    <div class="container-fluid h-100 d-flex align-items-center">
+        <div class="row">
+            <div class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center gap-4 left-slide">
+                <div>
+                    <img src="{{ 'assets/img/logo-white.svg'|theme }}" alt="Twiggy Ovoce s proteinem" class="img-fluid">
+                    <h3 class="text-white pt-2">{{ 'OVOCE S PROTEINEM'|_ }}</h3>
+                </div>
+                <p class="fw-bold text-white">{{ global.protein }}</p>
+                <a class="btn-text text-white" href="{{ 'bars/protein'|page }}" role="button">{{ 'Chceš víc?'|_ }}<svg width="20" height="21"
+                        viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 10.0405H18M18 10.0405L10 2.04053M18 10.0405L10 18.0405" stroke="#fff"
+                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <hr>
+                </a>
+            </div>
+            <div class="col-12 col-lg-9 mt-4 mt-lg-0">
+                <img src="{{ 'assets/img/twiggy-protein-all.png'|theme }}" alt="Twiggy Müsli " class="img-fluid bar-protein">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PROTEIN section END -->
+
+<!-- MAX section -->
+<section class="max">
+    <img src="{{ 'assets/img/stickers/cool.svg'|theme }}" alt="Twiggy" class="cool position-absolute">
+    <div class="container-fluid h-100 d-flex align-items-center">
+        <div class="row">
+            <div class="col-12 col-lg-9 mt-4 mt-lg-0 position-relative">
+
+                <div class="img-max">
+                    <img src="{{ 'assets/img/twiggy-max-all.png'|theme }}" alt="Twiggy MAX "
+                        class="bar-max z-1 img-fluid position-relative">
+                    <img src="{{ 'assets/img/blesky.svg'|theme }}" alt="Twiggy MAX "
+                        class="z-0 blesky position-absolute">
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center gap-4 top-slide">
+                <img src="{{ 'assets/img/logo-max.svg'|theme }}" alt="Twiggy Max" class="img-fluid">
+                <p class="fw-bold text-brown">{{ global.max }}</p>
+                <a class="btn-text" href="{{ 'bars/max'|page }}" role="button">{{ 'Chceš víc?'|_ }}<svg width="20" height="21"
+                        viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 10.0405H18M18 10.0405L10 2.04053M18 10.0405L10 18.0405" stroke="#0A5E2C"
+                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <hr>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- MAX section END -->
+
+<!-- Musli section -->
+
+<section class="musli">
+<img src="{{ 'assets/img/stickers/try-again.svg'|theme }}" alt="Twiggy" class="try-again position-absolute">
+    <div class="container-fluid h-100 d-flex align-items-center">
+        <div class="row">
+            <div class="col-12 col-lg-3 d-flex flex-column align-items-start justify-content-center gap-4 left-slide">
+                <img src="{{ 'assets/img/logo-musli.svg'|theme }}" alt="Twiggy Musli" class="img-fluid">
+                <p class="fw-bold text-white">{{ global.musli }}</p>
+                <a class="btn-text" href="{{ 'bars/musli'|page }}" role="button">{{ 'Chceš víc?'|_ }}<svg width="20" height="21"
+                        viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 10.0405H18M18 10.0405L10 2.04053M18 10.0405L10 18.0405" stroke="#0A5E2C"
+                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <hr>
+                </a>
+            </div>
+            <div class="col-12 col-lg-9 mt-4 mt-lg-0">
+                <img src="{{ 'assets/img/twiggy-musli-all.png'|theme }}" alt="Twiggy Müsli " class="img-fluid bar-m">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Musli section END -->
+
+<!-- aboutus section -->
+<section class="aboutus mt-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-md-5 mb-5 mb-md-0 d-flex flex-column gap-4 align-items-start justify-content-center left-slide">
+                <h2 class="text-blue">{{ 'O značce TWIGGY'|raw|_ }}</h2>
+                <div>{{ global.aboutus|content }}</div>
+
+                <a class="btn btn-primary-dark" href="{{ 'o-znacce'|page }}" role="button">{{ 'Více o značce'|_ }}<i class="bi bi-arrow-right-short"></i></a>
+            </div>
+
+            <div class="col-12 col-md-7 mt-5 mt-md-0 text-end position-relative top-slide">
+
+                {% partial 'components/counter' %}
+
+                <img src="{{ 'assets/img/o-twiggy.jpg'|theme }}" alt="Twiggy"
+            class="z-0 img-fluid w-75 rounded box-shadow position-absolute top-50 end-0 translate-middle-y d-none d-md-block">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- aboutus section END -->

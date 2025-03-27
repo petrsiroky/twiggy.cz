@@ -1,0 +1,22 @@
+url = "/404"
+layout = "default"
+title = 404
+
+[viewBag]
+robot_index = "noindex"
+robot_follow = "follow"
+==
+<section class="bg-crema er404 musli-hero">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="text-ovoce2 title404">404</h1>
+            <h1 class="text-blue">{{ 'A tyčinka nikde!'|_ }}</h1>
+            <p>{{ 'Něco nám tu chybí. Hledali jsme v šuplíku, v krabičce, dokonce i pod stolem… ale tahle stránka se vypařila.'|_ }}</p>
+            <h2>{{ 'Nebojte, pořád máme něco na zub:'|_ }}</h2>
+    
+            <a class="btn btn-primary-dark mt-5" href="{{ 'index'|page }}" role="button">Homepage<i
+                    class="bi bi-arrow-right-short"></i></a>
+
+        </div>
+    </div>
+</section>

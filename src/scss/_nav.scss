@@ -1,0 +1,171 @@
+
+
+nav {
+	width:100%;
+	position:fixed;
+	z-index: 99;
+	top: 0;
+	height:100px;
+	overflow:hidden;
+	background:transparent;
+	transition: background-color 0.3s ease, height 0.3s ease;
+
+
+	img.logo {
+		transition: width 0.5s ease-in-out;
+		width: 60%;
+
+		@include media-breakpoint-up(lg) {
+			width: 100%;
+		}
+	}
+
+}
+
+.sticky-menu{
+
+	&--scrolled {
+			background: $yellow;
+			height: 60px;
+
+			img.logo {
+				width: 60%;
+			}
+
+			.btn-menu {
+				background-color: transparent;
+			}
+	
+		}
+}
+  
+
+.btn-menu {
+	background-color: $yellow;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	transition: background-color .3s ease-in-out;
+	text-decoration: none;
+	   display: flex;
+	   align-items: center;
+
+	&:hover {
+		background-color: darken($yellow, 15%);
+	}
+	
+	span {
+		text-decoration: none;
+		font-size: 1.5rem;
+		line-height: 1;
+		font-weight: bold;
+		color: $blue;
+		padding-right: 1rem;
+	}
+
+	svg {
+		fill: $blue;
+	}
+}
+
+.close svg {
+	cursor: pointer;
+
+	&:hover path:first-of-type {
+		fill: $white;
+	}
+}
+
+
+
+/*overlay*/
+.overlay {
+  	position: fixed;
+	height:100%;
+	width:100%;
+	background: $blue;
+	overflow:auto;
+	z-index:999;
+	right: -100%;
+
+	@include media-breakpoint-up(lg) {
+		width: 35%;
+	}
+	
+}
+
+.wrap {
+	color: $white;
+	text-align:center;
+	margin: auto;
+}
+
+.nav-link {
+	font-family: "Nunito", serif;
+	font-size:3rem;
+	font-weight: 800;
+	width: fit-content;
+    margin: auto;
+
+	hr {
+		border-top: solid 3px $yellow;
+		opacity: 1;
+		width: 0%;
+		margin: auto;
+		transition: all .3s ease-in-out;
+	}
+
+	&:hover {
+		hr {
+			width: 70%;
+		}
+	}
+}
+
+#collapseMenu{
+
+	li {
+		list-style: none;
+	}
+
+	.dropdown-item {
+		color: $yellow;
+		font-size: 20px;
+		font-weight: bold;
+		padding: .7rem 0;
+		width: fit-content;
+		margin: auto;
+
+		hr {
+			border-top: solid 2px $yellow;
+			opacity: 1;
+			width: 0%;
+			margin: auto;
+			transition: all .3s ease-in-out;
+			margin-top: 8px;
+		}
+	
+		&:hover {
+			hr {
+				width: 50%;
+			}
+		}
+	}
+}
+
+
+.social {
+	font-size:25px;
+	padding:20px;
+}
+
+.social-icon {
+	color: $yellow;
+	display:inline-block;
+}
+.social-icon:hover {
+	color: $white;
+}
+.social-icon i {
+  font-size: 1.5rem;
+}
+

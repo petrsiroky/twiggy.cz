@@ -1,0 +1,85 @@
+<section class="bars-footer">
+  <div class="container-fluid p-0">
+    <img class="bar-footer" src="{{ 'assets/img/bars-footer.webp'|theme }}" alt="Twiggy">
+  </div>
+</section>
+
+
+<footer class="bg-blue">
+  <section class="pb-3">
+    <div class="container">
+
+      <div class="d-flex flex-column align-items-center justify-content-center gap-4">
+        <img src="{{ 'assets/img/logo-white.svg'|theme }}" alt="logo Twiggy">
+
+        <div class="menu-items d-flex flex-column flex-lg-row gap-3 gap-lg-5 justify-content-between text-center">
+
+          <a href="{{ 'bars/protein'|page }}" class="text-white">Twiggy Ovoce s proteinem</a>
+          <a href="{{ 'bars/max'|page }}" class="text-white">Twiggy Max</a>
+          <a href="{{ 'bars/musli'|page }}" class="text-white">Twiggy Müsli</a>
+        </div>
+
+
+        <div class="menu-items d-flex flex-column flex-lg-row gap-3 gap-lg-5 justify-content-between text-center">
+          <a href="{{ 'index'|page }}" class="text-white">{{ 'Domů'|_ }}</a>
+          <a href="{{ 'o-znacce'|page }}" class="text-white">{{ 'O značce'|_ }}</a>
+          <a href="{{ 'kontakty'|page }}" class="text-white">{{ 'Kontakty'|_ }}</a>
+          <a href="{{ 'privacy'|page }}" class="text-white">Cookies</a>
+          <a href="{{ 'https://www.ekofrukt.cz/'|link }}" class="text-white" target="_blank"
+            rel="noopener noreferrer">ekofrukt.cz</a>
+        </div>
+        
+        <div class="d-flex gap-4 mt-4">
+
+          <div class="social-footer">
+            <div class="d-flex justify-content-center gap-4">
+              <a class="social-icon" href="{{ global.fb }}" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+  
+              <a class="social-icon" href="{{ global.ig }}" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="vr text-yellow"></div>
+
+          {% partial 'components/sitepicker' %}
+
+        </div>
+
+
+        
+
+
+        <div class="w-100 text-white">
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+            <p class="m-0 small">© 2015-<span id="year"></span> EKOFRUKT Slaný, spol. s. r. o.</p>
+            <a href="https://www.sirokaagentura.cz/" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+              data-bs-title="{{ 'Web od Široká Agentura'|_ }}" target="_blank" rel="noopener noreferrer">
+              <!--?xml version="1.0" encoding="UTF-8"?-->
+              <svg id="Vrstva_2" data-name="Vrstva 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 103.74"
+                width="24">
+                <g id="ICONS">
+                  <g id="icon_only" data-name="icon only">
+                    <polygon points="89.72 9.08 112.95 10.74 112.94 0 89.72 9.08"
+                      style="fill: #fff; stroke-width: 0px;"></polygon>
+                    <polygon points="61.28 20.21 40.32 28.41 64.03 77.92 74.01 83.19 108.04 23.54 61.28 20.21"
+                      style="fill: #fff; stroke-width: 0px;"></polygon>
+                    <polygon points="85.62 89.31 113 103.74 112.96 41.38 85.62 89.31"
+                      style="fill: #fff; stroke-width: 0px;"></polygon>
+                    <polygon points="0 44.18 44.58 67.67 28.07 33.2 0 44.18" style="fill: #fff; stroke-width: 0px;">
+                    </polygon>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</footer>

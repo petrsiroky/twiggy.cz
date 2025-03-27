@@ -1,0 +1,37 @@
+
+
+.swiper-pagination {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    overflow-x: auto;
+}
+
+.swiper-pagination-bullet {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: $blue;
+    opacity: 1;
+    background-color: transparent;
+    border: $blue solid 3px;
+    flex: 0 0 auto;
+}
+
+
+.swiper-pagination-bullet-active {
+	color:$white;
+	background: $blue;
+}
+
+.table {
+    --bs-table-striped-bg: #FFEAD1;
+    --bs-table-bg: #FFF8EF;
+    font-size: 14px;
+}

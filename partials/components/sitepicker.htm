@@ -1,0 +1,7 @@
+<div class="language-flags d-flex align-items-center justify-content-center gap-4">
+    {% for site in sitePicker.sites %}
+    <a href="{{ site.url }}" class="lh-1 flag-link focus-ring focus-ring-yellow" title="{{ site.locale }}">
+        <img src="{{ ('assets/img/flags/' ~ site.locale ~ '.svg')|theme }}" alt="{{ site.locale }}">
+    </a>
+    {% endfor %}
+</div>

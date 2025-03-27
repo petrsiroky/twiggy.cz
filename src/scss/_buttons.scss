@@ -1,0 +1,84 @@
+a, button {
+  transition: all .2s ease;
+}
+
+a {
+  color: $blue;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.btn,
+.btn-primary {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  padding: .3rem 1.5rem .2rem 1.5rem;
+  font-weight: 900;
+  box-shadow: 0px 4px 10px 0px rgba(176,139,36,0.3);
+
+  .bi {
+    font-size: 2rem;
+    vertical-align: middle;
+  }
+
+  &-dark {
+    color: $blue;
+    background-color: $yellow;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+  &-light {
+    color: $brown;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.btn-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: $green;
+  text-decoration: none;
+  width: auto;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.4rem;
+  }
+
+
+  svg {
+    transition: all .3s ease-in-out;
+    margin-left: 8px;
+    margin-bottom: 2px;
+
+  }
+
+  hr {
+		border-top: solid 3px $green;
+		width: 0%;
+		opacity: 1;
+		transition: all .3s ease-in-out;
+    margin: 0;
+	}
+
+	&:hover {
+    color: $green;
+
+		hr {
+			width: 100%;
+		}
+
+    svg {
+      margin-left: 12px;
+    }
+	}
+}

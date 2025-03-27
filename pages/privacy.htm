@@ -1,0 +1,18 @@
+url = "/privacy"
+layout = "subpage"
+title = "Cookies"
+
+[section gdpr]
+handle = "gdpr"
+
+[viewBag]
+robot_index = "noindex"
+robot_follow = "nofollow"
+==
+<section id="gdpr" class="mt-5">
+    <div class="container page-content">
+        {{ gdpr.content|content }}
+        <div class= "cky-audit-table-element"></div>
+        <button class="cky-banner-element">Nastavení Cookies</button>
+    </div>
+</section>

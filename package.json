@@ -1,0 +1,28 @@
+{
+  "name": "s-theme-starter",
+  "version": "1.2.0",
+  "description": "parcel, bootstrap, sass, post lightbox, GSAP, lenis, swiper",
+  "scripts": {
+    "sass": "sass --watch src/scss/styles.scss:assets/js/main.css",
+    "dev": "parcel watch src/js/main.js --dist-dir assets/js",
+    "build": "parcel build src/js/main.js --dist-dir assets/js --no-source-maps"
+  },
+  "keywords": [],
+  "author": "Petr Široký",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "sass": "^1.80.5"
+    
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "glightbox": "^3.3.0",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.14",
+    "swiper": "^11.1.14"
+  }
+}

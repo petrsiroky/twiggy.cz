@@ -1,0 +1,124 @@
+url = "/o-znacce"
+layout = "subpage"
+title = "O značce"
+
+[viewBag]
+seo_title = "O značce"
+seo_description = "S novou érou Twiggy přicházíme s vylepšeným složením, kvalitními surovinami, s novými obaly a hlavně s novou řadou!"
+robot_index = "index"
+robot_follow = "follow"
+localeUrl[en-gb] = "/about-us"
+localeUrl[pl] = "/o-marce"
+localeTitle[en-gb] = "About TWIGGY"
+localeTitle[pl] = "O marce TWIGGY"
+localeSeo_title[en-gb] = "About the TWIGGY brand"
+localeSeo_title[pl] = "O marce"
+localeSeo_description[en-gb] = "The new era of Twiggy features improved recipes, premium-quality ingredients, new
+packaging and most importantly a new range!"
+localeSeo_description[pl] = "Wraz z nową erą Twiggy pojawiły się ulepszone składniki, wysokiej jakości składniki, nowe
+opakowania i, co najważniejsze, nowy asortyment! Naszym"
+localeRobot_index[en-gb] = "index"
+localeRobot_index[pl] = "index"
+localeRobot_follow[en-gb] = "follow"
+localeRobot_follow[pl] = "follow"
+==
+<!-- aboutus section -->
+<section class="aboutus mt-0">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-12 col-md-5 mb-5 mb-md-0">
+                
+                <div>
+                    {{ global.aboutus1|content }}
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-7 mt-5 mt-md-0 text-end position-relative">
+
+                {% partial 'components/counter' %}
+
+                <img src="{{ 'assets/img/o-twiggy.jpg'|theme }}" alt="Twiggy"
+                    class="z-0 img-fluid w-75 rounded box-shadow position-absolute top-50 end-0 translate-middle-y d-none d-md-block">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- aboutus section END -->
+
+<!-- BARS section -->
+ <section class="bars-line">
+    <div class="container-fluid">
+
+        <div class="left-scroll bars">
+            <img src="{{ 'assets/img/bars1.png'|theme }}" alt="Twiggy">
+        </div>
+
+        <div class="right-scroll bars">
+            <img src="{{ 'assets/img/bars2.png'|theme }}" alt="Twiggy">
+        </div>
+
+    </div>
+
+ </section>
+ <!-- BARS section END -->
+
+  <!-- HODNOTY section -->
+   <section class="hodnoty bg-crema position-relative pb-0">
+
+    <img src="{{ 'assets/img/stickers/!.svg'|theme }}" alt="Twiggy" class="vykricnik position-absolute">
+    <div class="container position-relative top-slide">
+        <img src="{{ 'assets/img/stickers/cool.svg'|theme }}" alt="Twiggy" class="cool1 position-absolute">
+        <h2 class="text-blue text-center">{{ 'Twiggy hodnoty'|_ }}</h2>
+
+        <div class="row row-cols-1 row-cols-md-4 g-5 my-5">
+
+            <div class="col hodnoty-card d-flex flex-md-column gap-4 gap-md-5 align-items-center">
+                <img src="{{ 'assets/img/icons/hodnoty1.svg'|theme }}" alt="Twiggy hodnoty ikona">
+                <h4 class="text-left text-md-center fw-bold">{{ 'Chutné, zdravé a cenově dostupné svačiny pro každého'|_ }}</h4>
+            </div>
+            <div class="col hodnoty-card d-flex flex-md-column gap-4 gap-md-5 align-items-center">
+                <img src="{{ 'assets/img/icons/hodnoty2.svg'|theme }}" alt="Twiggy hodnoty ikona">
+                <h4 class="text-left text-md-center fw-bold">{{ 'Dbáme na kvalitu surovin a inovace v recepturách'|_ }}</h4>
+            </div>
+            <div class="col hodnoty-card d-flex flex-md-column gap-4 gap-md-5 align-items-center">
+                <img src="{{ 'assets/img/icons/hodnoty3.svg'|theme }}" alt="Twiggy hodnoty ikona">
+                <h4 class="text-left text-md-center fw-bold">{{ 'Chceme inspirovat ke zdravějšímu stravování bez kompromisů v chuti'|_ }}</h4>
+            </div>
+            <div class="col hodnoty-card d-flex flex-md-column gap-4 gap-md-5 align-items-center">
+                <img src="{{ 'assets/img/icons/hodnoty4.svg'|theme }}" alt="Twiggy hodnoty ikona">
+                <h4 class="text-left text-md-center fw-bold">{{ 'Zaměřujeme se na udržitelnost, lokální zdroje a podporu zdraví'|_ }}</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-5 align-items-center">
+            <div class="col left-slide">
+                <h2 class="text-blue">{{ 'Neustále se zlepšujeme'|_ }}</h2>
+                {{ global.inovation|content }}
+            </div>
+            <div class="col top-slide">
+                <img class="grow-img" src="{{ 'assets/img/grow.png'|theme }}" alt="Twiggy" width="100%">
+
+            </div>
+        </div>
+    </div>
+   </section>
+  <!-- HODNOTY section END -->
+
+  <!-- Jak se to dělá section -->
+
+  <section class="pb-0">
+    <div class="container">
+        <h2 class="text-blue">{{ 'Jak se Twiggy tyčinky vyrábí'|_ }}</h2>
+        <img src="{{ 'assets/img/proces.png'|theme }}" alt="Twiggy proces výroby" width="100%">
+    </div>
+  </section>

@@ -1,0 +1,190 @@
+url = "/twiggy-max"
+layout = "default"
+title = "TWIGGY MAX"
+
+[section bar]
+handle = "Max"
+
+[viewBag]
+seo_title = "Twiggy MAX"
+seo_description = "Objevte prémiovou tyčinku TWIGGY MAX, která vyniká vysokým podílem kvalitních ořechů – arašídy, vlašské ořechy, mandle, pistácie a kešu. Ořechy přidáváme pražené, aby jejich chuť byla naprosto dokonalá, zároveň jsou bohaté na vitamíny, minerály a železo, což přispívá k podpoře zdraví srdce, regulaci krevního tlaku a snížení hladiny cholesterolu."
+robot_index = "index"
+robot_follow = "follow"
+localeSeo_description[en-gb] = "Discover premium TWIGGY MAX bars, boasting an outstandingly high proportion of quality nuts -
+peanuts, walnuts, almonds, pistachios and cashews."
+localeSeo_description[pl] = "Odkryj batonik premium TWIGGY MAX, który wyróżnia się wysokiej zawartością najwyższej
+jakości orzechów – arachidowych, włoskich, migdałów, pistacji i nerkowców."
+localeRobot_index[en-gb] = "index"
+localeRobot_index[pl] = "index"
+localeRobot_follow[en-gb] = "follow"
+localeRobot_follow[pl] = "follow"
+localeSeo_title[en-gb] = "Twiggy MAX"
+localeSeo_title[pl] = "Twiggy MAX"
+==
+<section class="max-hero bar-hero">
+    <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+        <div class="row">
+
+            <div class="col-12 col-lg-6 d-flex flex-column align-items-start justify-content-center gap-4 left-slide">
+                <div class="d-flex gap-2 gap-lg-5">
+                    <img src="{{ 'assets/img/logo-max.svg'|theme }}" alt="TWIGGY Max" class="img-fluid" width="250">
+            
+                    <img src="{{ 'assets/img/stickers/loveat.svg'|theme }}" alt="Twiggy" width="100" class="d-none d-sm-block">
+                </div>
+            
+                <div>
+                    {{bar.popis|content}}
+                </div>
+
+                <div class="d-flex flex-column align-items-start gap-4">
+                    <a class="btn-text" href="#why" role="button">{{ 'Chceš vědět víc?'|_ }}
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 10.0405H18M18 10.0405L10 2.04053M18 10.0405L10 18.0405" stroke="#0A5E2C" stroke-width="4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <hr>
+                    </a>
+    
+                    <a class="btn-text" target="_blank" rel="noopener noreferrer" href="https://eshop.druidcz.com/vyhledavani/?string=twiggy" role="button">{{ 'Koupit'|_ }}
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 10.0405H18M18 10.0405L10 2.04053M18 10.0405L10 18.0405" stroke="#0A5E2C" stroke-width="4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <hr>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="col-12 col-lg-6 mt-4 mt-lg-0 d-flex align-items-center justify-content-center">
+                <div class="image-stack">
+                    <img src="{{ 'assets/img/twiggy-max/bg.png'|theme }}" alt="Twiggy Max" class="image-stack__item" width="80%">
+                    <img src="{{ 'assets/img/twiggy-max/orechy.png'|theme }}" alt="Twiggy Max" class="ovoce orechy image-stack__item" width="100%">
+                    <img src="{{ 'assets/img/twiggy-max/bars.png'|theme }}" alt="Twiggy Max" class="bars image-stack__item" width="100%">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</section>
+
+<section id="why" class="pt-0">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+                <h2 class="text-blue mb-4 w-75">{{ 'Tyčinka TWIGGY MAX je ideální volbou pro:'|_ }}</h2>
+                <ul class="p-0 why-list">
+
+                    <li class="d-flex align-items-center gap-4">
+                        <img src="{{ 'assets/img/icons/sun.svg'|theme }}" alt="icon" width="40" height="40">
+                        <p class="text-blue m-0"><strong>{{ 'Zdravý životní styl'|_ }}</strong> – {{ 'bez GMO a trans tuků.'|_ }}</p>  
+                    </li>
+
+                    <li class="d-flex align-items-center gap-4">
+                        <img src="{{ 'assets/img/icons/car.svg'|theme }}" alt="icon" width="40" height="40">                          
+                        <p class="text-blue m-0"><strong>{{ 'Na cesty i do práce'|_ }}</strong> – {{ 'praktický a chutný snack.'|_ }}</p>  
+                    </li>
+
+                    <li class="d-flex align-items-center gap-4">
+                        <img src="{{ 'assets/img/icons/mountain.svg'|theme }}" alt="icon" width="40" height="40">                          
+                        <p class="text-blue m-0"><strong>{{ 'Sportovce a aktivní lidi'|_ }}</strong> – {{ 'rychlý a zdravý zdroj energie.'|_ }}</p>  
+                    </li>
+
+                    <li class="d-flex align-items-center gap-4">
+                        <img src="{{ 'assets/img/icons/fork.svg'|theme }}" alt="icon" width="40" height="40">                          
+                        <p class="text-blue m-0"><strong>{{ 'Milovníky kvality'|_ }}</strong> – {{ 'pravá hořká čokoláda, pečlivě vybrané pražené ořechy.'|_ }}</p>  
+                    </li>
+
+                    <li class="d-flex align-items-center gap-4">
+                        <img src="{{ 'assets/img/icons/person.svg'|theme }}" alt="icon" width="40" height="40">                          
+                        <p class="text-blue m-0"><strong>{{ 'Podpora srdce a cév'|_ }}</strong> – {{ 'vitamíny a minerály z ořechů.'|_ }}</p>  
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-7 bar-wrapper mt-5 mt-lg-0">
+            
+                <div class="d-flex align-items-center justify-content-center">
+
+                    <ul class="bar-list">
+                        <li>{{ 'Vysoký podíl pražených ořechů'|_ }}</li>
+                        <li>{{ 'Bez trans tuků, GMO a přidaných barviv'|_ }}</li>
+                        <li>{{ 'Pečlivě vybírané suroviny'|_ }}</li>
+                        <li>{{ 'Vitamíny, minerály a železo'|_ }}</li>
+                    </ul>
+            
+            
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="nude-bar" src="{{ 'assets/img/twiggy-max/nude-bar.png'|theme }}" alt="twiggy">
+                    </div>
+
+                    <ul class="bar-list">
+                        <li>{{ 'Bohatý zdroj vlákniny'|_ }}</li>
+                        <li>{{ 'Vegan'|_ }}</li>
+                        <li>{{ 'Pravá 54% hořká čokoláda'|_ }}</li>
+                        <li>{{ 'Ideální pro aktivní životní styl'|_ }}</li>
+                    </ul>
+            
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="swiper-section pt-5">
+
+        <div class="swiper swiper-bars">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+
+                {% for item in bar.tycinky %}
+                <div class="swiper-slide" data-name="{{item.menu}}">
+                    <div class="container-fluid">
+                        <div class="row row-cols-1 row-cols-md-2">
+
+                            <div class="col mb-5 mb-lg-0 d-flex align-items-center justify-content-center">
+                                <img class="swiper-img" src="{{ item.img|media }}" alt="Twiggy Müsli" width="90%">
+                            </div>
+
+                            <div class="left-col col text-start d-flex flex-column justify-content-center gap-4">
+                
+                                <h2 class="text-blue">{{item.nazev}}</h2>
+
+                                <div>
+                                    <h3>{{ 'Složení'|_ }}:</h3>
+                                    <p class="small text-content m-0">{{item.slozeni}}</p>
+                                </div>
+                                
+                
+                                <div>
+                                    <h3>{{ 'Výživové údaje na 100 g'|_ }}:</h3>
+                
+                                    <table class="table table-striped">
+                                        <tbody>
+                
+                                            {% for value in item.vyzivove_udaje %}
+                                            <tr>
+                                                <td>{{ value.nazev }}</td>
+                                                <td>{{ value.hodnota }}</td>
+                                            </tr>
+                                            {% endfor %}
+                
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+            
+        </div>
+
+    
+</section>

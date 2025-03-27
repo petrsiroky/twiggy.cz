@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+    --minFontSize: 2rem;
+    --maxFontSize: 6rem;
+    --scaler: 6vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+h2 {
+    --minFontSize: 1.5rem;
+    --maxFontSize: 2rem;
+    --scaler: 4vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+    line-height: normal;
+    font-weight: 800;
+  }
+  
+  h3 {
+    --minFontSize: 1rem;
+    --maxFontSize: 1.5rem;
+    --scaler: 3vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  h4 {
+    --minFontSize: 1rem;
+    --maxFontSize: 1.25rem; 
+    --scaler: 9vw;
+    font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+    line-height: 1.6;
+  }
+  
+
+  p {
+    line-height: 1.5rem;
+  }
+
+  .small {
+    font-size: 0.8rem;
+  }
